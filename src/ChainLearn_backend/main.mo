@@ -1,28 +1,35 @@
+import Course "Course"; // Correctly import the `Course` module
 import Array "mo:base/Array";
-import Course "Course";
+
 
 actor {
-  stable var students : [Student] = [];
-  stable var courseCount : Nat = 0;
-  stable var courseList : [Course.Courses] = [Course.course1, Course.course2, Course.course3];
+  stable var students: [Student] = []; // Store students in a stable variable
 
-  public type Student = {
-    firstName : Text;
-    lastName : Text;
-    course : Text;
-    userName : Text;
+  public type Student = { // Define the Student type
+    firstName: Text;
+    lastName: Text;
+    course: Text;
+    userName: Text;
   };
 
+  // Query to get the total number of available courses
   public query func getCourseCount(): async Nat {
-    return courseCount;
+    return Course.courseCount();
   };
 
-  public query func getStudents() : async [Student] {
+  // Query to get the list of available courses
+  public query func getAvailableCourses(): async [Course.Courses] {
+    return Course.availableCourses();
+  };
+
+  // Query to get the list of registered students
+  public query func getStudents(): async [Student] {
     return students;
   };
 
-  public func addStudent(firstName : Text, lastName : Text, course : Text, userName : Text) : async () {
-    let newStudent : [Student] = [{ firstName; lastName; course; userName }];
-    students := Array.append(students, newStudent);
+  // Function to add a new student
+  public func addStudent(firstName: Text, lastName: Text, course: Text, userName: Text): async () {
+    let newStudent: Student = { firstName; lastName; course; userName };
+    students := Array.append(students, [newStudent]);
   };
-};
+}
