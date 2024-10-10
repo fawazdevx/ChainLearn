@@ -9,3 +9,39 @@ Features for this platform include:
 The essence of this is to bridge the gap with sufficient knowledge between web2, web3 and blockchain technology in the Web3 space...
 
 Help with a USP on this project that I and my team want to build on ICP Blockchain 
+
+// import Course "Course"; // Correctly import the `Course` module
+// import Array "mo:base/Array";
+
+
+// actor {
+//   stable var students: [Student] = []; // Store students in a stable variable
+
+//   public type Student = { // Define the Student type
+//     firstName: Text;
+//     lastName: Text;
+//     course: Text;
+//     userName: Text;
+//   };
+
+//   // Query to get the total number of available courses
+//   public query func getCourseCount(): async Nat {
+//     return Course.courseCount();
+//   };
+
+//   // Query to get the list of available courses
+//   public query func getAvailableCourses(): async [Course.Courses] {
+//     return Course.availableCourses();
+//   };
+
+//   // Query to get the list of registered students
+//   public query func getStudents(): async [Student] {
+//     return students;
+//   };
+
+//   // Function to add a new student
+//   public func addStudent(firstName: Text, lastName: Text, course: Text, userName: Text): async () {
+//     let newStudent: Student = { firstName; lastName; course; userName };
+//     students := Array.append(students, [newStudent]);
+//   };
+// }
