@@ -1,0 +1,11 @@
+Features for this platform include:
+
+✓ A student registering section but would later be upgraded to teachers and students.
+✓ Engaging text courses
+✓ Quiz sections after every course content.
+✓ Achievement and badges.
+✓ Rewarding participant or students with cryptocurrencies and other perks.
+
+The essence of this is to bridge the gap with sufficient knowledge between web2, web3 and blockchain technology in the Web3 space...
+
+Help with a USP on this project that I and my team want to build on ICP Blockchain 

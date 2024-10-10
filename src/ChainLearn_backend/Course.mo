@@ -1,10 +1,18 @@
 import Array "mo:base/Array";
 
 module {
-  public type Courses = { // Define the Courses type
+
+  public type Question = {
+    questionText: Text;
+    options: [Text];
+    correctOptionIndex: Nat;
+  };
+
+  public type Courses = { // Defining the Courses type
     courseID: Nat;
     courseName: Text;
     courseDescription: Text;
+    quiz: [Question];  // Adding quiz structure
   };
 
   // Function to return the available courses
@@ -19,7 +27,10 @@ module {
           - Build powerful decentralized applications (dApps)
           - Essential Web2 JavaScript concepts
           - Introduction to Web3 technologies like smart contracts and Ethereum
-          \n**Target Audience:** Ideal for Web2 developers looking to transition into the Web3 space."
+          \n**Target Audience:** Ideal for Web2 developers looking to transition into the Web3 space.";
+        quiz = [ 
+          { questionText = "What is JavaScript?"; options = ["A language", "A framework"]; correctOptionIndex = 0 }
+        ]
       },
       {
         courseID = 2; 
@@ -31,7 +42,10 @@ module {
           - Blockchain development with Python
           - Interacting with Web3 protocols and decentralized networks
           - Integration with popular Web3 libraries and frameworks
-          \n**Target Audience:** Suitable for developers new to Python and interested in blockchain."
+          \n**Target Audience:** Suitable for developers new to Python and interested in blockchain.";
+        quiz = [
+          { questionText = "What is Python?"; options = ["A snake", "A programming language"]; correctOptionIndex = 1 }
+        ]
       },
       {
         courseID = 3; 
@@ -42,7 +56,10 @@ module {
           - Traditional game development techniques
           - Decentralized gaming elements like tokenized assets and NFTs
           - Creating play-to-earn (P2E) models using blockchain
-          \n**Target Audience:** Developers looking to combine Web2 game development skills with Web3 innovations."
+          \n**Target Audience:** Developers looking to combine Web2 game development skills with Web3 innovations.";
+        quiz = [
+          { questionText = "What is C++?"; options = ["A snake", "A programming language"]; correctOptionIndex = 1 }
+        ]
       }
     ];
   };
