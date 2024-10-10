@@ -41,8 +41,8 @@ actor {
   };
 
   // Function to issue an NFT after course completion or an achievement
-  public func issueAchievementNFT(userName: Text, courseName: Text, achievement: Text): async () {
-    nftCollection := NFT.issueNFT(nftCollection, userName, courseName, achievement);
+  public func issueAchievementNFT(userName: Text, courseName: Text, achievement: Text, imageCID: Text): async () {
+    nftCollection := NFT.issueNFT(nftCollection, userName, courseName, achievement, imageCID);
   };
 
   // Query to get all issued NFTs

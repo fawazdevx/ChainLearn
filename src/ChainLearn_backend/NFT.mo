@@ -1,4 +1,3 @@
-// NFT.mo
 import Array "mo:base/Array";
 
 module {
@@ -8,6 +7,7 @@ module {
     studentUserName: Text;
     courseName: Text;
     achievement: Text;
+    imageCID: Text;  // Store the CID for the image
   };
 
   // Function to issue a new NFT badge to a student
@@ -15,13 +15,15 @@ module {
     nftCollection: [BadgeNFT],
     studentUserName: Text,
     courseName: Text,
-    achievement: Text
+    achievement: Text,
+    imageCID: Text  // the image CID parameter
   ): [BadgeNFT] {
     let newNFT: BadgeNFT = {
-      nftID = Array.size(nftCollection) + 1;
+      nftID = Array.size(nftCollection) + 1; // Generate a new ID
       studentUserName;
       courseName;
       achievement;
+      imageCID;  // Stores the image CID in the NFT
     };
 
     return Array.append(nftCollection, [newNFT]);
@@ -31,4 +33,9 @@ module {
   public func getNFTs(nftCollection: [BadgeNFT]): [BadgeNFT] {
     return nftCollection;
   };
-}
+
+  // Query to get a specific NFT by its ID
+  public query func getNFT(nftCollection: [BadgeNFT], nftID: Nat): async ?BadgeNFT {
+    return Array.find<BadgeNFT>(nftCollection, func (nft) { nft.nftID == nftID });
+  };
+};
