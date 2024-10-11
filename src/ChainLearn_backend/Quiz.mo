@@ -1,4 +1,4 @@
-// Quiz.mo
+/// Quiz.mo
 import Array "mo:base/Array";
 
 module {

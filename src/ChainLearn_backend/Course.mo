@@ -64,7 +64,7 @@ module {
     ];
   };
 
-  // Function to return the count of available courses
+  // Function to return the number of available courses
   public func courseCount(): Nat {
     return Array.size(availableCourses());
   };

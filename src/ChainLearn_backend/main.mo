@@ -3,7 +3,7 @@ import Array "mo:base/Array";
 import Quiz "Quiz";     // Importing the Quiz module
 import NFT "NFT";       // Importing the NFT module
 
-actor {
+actor ChainLearn{
   stable var students: [Student] = []; // Store students in a stable variable
   stable var nftCollection: [NFT.BadgeNFT] = [];  // Store issued NFTs here
 
@@ -40,9 +40,11 @@ actor {
     return Quiz.getQuiz(courseID);
   };
 
-  // Function to issue an NFT after course completion or an achievement
   public func issueAchievementNFT(userName: Text, courseName: Text, achievement: Text, imageCID: Text): async () {
-    nftCollection := NFT.issueNFT(nftCollection, userName, courseName, achievement, imageCID);
+    let isRare = (achievement == "rare");
+    let imageCID = NFT.getCIDForCourse(courseName, isRare); // Automatically get the CID based on course name
+    nftCollection := NFT.issueNFT(nftCollection, userName, courseName, achievement);
+
   };
 
   // Query to get all issued NFTs

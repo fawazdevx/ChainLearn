@@ -1,4 +1,4 @@
-Features for this platform include:
+Features for this platform includes:
 
 ✓ A student registering section but would later be upgraded to teachers and students.
 ✓ Engaging text courses
