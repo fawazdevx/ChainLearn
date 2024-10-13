@@ -18,16 +18,16 @@ module NFT {
 
   // Array containing course-to-CID mappings for rare NFTs
   public let rareCourseCIDList: [CourseCID] = [
-    { courseName = "Software Development with Python"; cid = "QmUXbdscMQyavR3bkAyaCQ7MTRXSrKdVrHaBptviksE75B" }, 
-    { courseName = "Software Development with JavaScript"; cid = "Qmf1vVRquJeo2Nk3rTf6MGAuScCiLQVMofwUujSa1qXLpj" }, 
-    { courseName = "Game Development with C++"; cid = "QmUB4hawPcVNpmdHXUfY1iBSMs7NQdyjfrdhJDLZ5FFzqF" }
+    { courseName = "Software Development with Python"; cid = "QmUXbdscMQyavR3bkAyaCQ7MTRXSrKdVrHaBptviksE75B" }, // rareNFT [https://ipfs.io/ipfs/QmUXbdscMQyavR3bkAyaCQ7MTRXSrKdVrHaBptviksE75B]
+    { courseName = "Software Development with JavaScript"; cid = "Qmf1vVRquJeo2Nk3rTf6MGAuScCiLQVMofwUujSa1qXLpj" }, // rareNFT [https://ipfs.io/ipfs/Qmf1vVRquJeo2Nk3rTf6MGAuScCiLQVMofwUujSa1qXLpj]
+    { courseName = "Game Development with C++"; cid = "QmUB4hawPcVNpmdHXUfY1iBSMs7NQdyjfrdhJDLZ5FFzqF" } // rareNFT [https://ipfs.io/ipfs/QmUB4hawPcVNpmdHXUfY1iBSMs7NQdyjfrdhJDLZ5FFzqF]
   ];
 
   // Array containing course-to-CID mappings for common NFTs
   public let commonCourseCIDList: [CourseCID] = [
-    { courseName = "Software Development with Python"; cid = "QmUTbBngtQaa9vaW89Zw5hz5hhqqWduHAGirr6bwiuuBQV" }, 
-    { courseName = "Software Development with JavaScript"; cid = "QmZzM65sBxK8L6taaUk1eQFw7Kn1X6vMuy9c7Z9M8oZFbA" }, 
-    { courseName = "Game Development with C++"; cid = "Qmcgxyk8gRBQ4sAfokP8ANXVkQZJTadU6fvP48UuzN6xKG" }
+    { courseName = "Software Development with Python"; cid = "QmUTbBngtQaa9vaW89Zw5hz5hhqqWduHAGirr6bwiuuBQV" }, // commonNFT [https://ipfs.io/ipfs/QmUTbBngtQaa9vaW89Zw5hz5hhqqWduHAGirr6bwiuuBQV]
+    { courseName = "Software Development with JavaScript"; cid = "QmZzM65sBxK8L6taaUk1eQFw7Kn1X6vMuy9c7Z9M8oZFbA" }, // commonNFT [https://ipfs.io/ipfs/QmZzM65sBxK8L6taaUk1eQFw7Kn1X6vMuy9c7Z9M8oZFbA]
+    { courseName = "Game Development with C++"; cid = "Qmcgxyk8gRBQ4sAfokP8ANXVkQZJTadU6fvP48UuzN6xKG" } // commonNFT [https://ipfs.io/ipfs/Qmcgxyk8gRBQ4sAfokP8ANXVkQZJTadU6fvP48UuzN6xKG]
   ];
 
   // Function to retrieve CID based on the course name and rarity
