@@ -1,3 +1,4 @@
+/// Main.mo
 import Course "Course"; // Importing the Course module
 import Array "mo:base/Array";
 import Quiz "Quiz";     // Importing the Quiz module

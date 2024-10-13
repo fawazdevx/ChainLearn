@@ -16,7 +16,7 @@
 # rust
 target/
 
-# frontend code
+# frontend codes
 node_modules/
 dist/
 .svelte-kit/

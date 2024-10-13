@@ -1,6 +1,6 @@
 # ChainLearn
 
-![ChainLearn Logo](logo.png)
+![ChainLearn Logo](logo_c.png)
 
 ChainLearn is a decentralized learning platform designed to empower developers and learners with seamless access to Web3 knowledge. Our platform bridges the gap between Web2 and Web3, offering interactive courses, quizzes, and rewards through blockchain technology. By integrating NFTs and cryptocurrency-based rewards, ChainLearn incentivizes learners to achieve milestones and build expertise in blockchain, cybersecurity, software, and game development. Our decentralized system ensures transparency, security, and ownership for all participants, making it the go-to platform for Web3 education.
 
@@ -66,7 +66,8 @@ If you are hosting frontend code somewhere without using DFX, you may need to ma
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+
 
 ## Acknowledgments
 

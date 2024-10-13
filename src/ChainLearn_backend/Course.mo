@@ -1,3 +1,4 @@
+/// Course.mo
 import Array "mo:base/Array";
 
 module {
