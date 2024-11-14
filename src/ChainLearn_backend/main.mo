@@ -39,6 +39,7 @@ actor ChainLearn{
   // Query to get the quiz for a specific course
   public query func getQuiz(courseID: Nat): async ?Quiz.Quiz {
     return Quiz.getQuiz(courseID);
+    
   };
 
   public func issueAchievementNFT(userName: Text, courseName: Text, achievement: Text, imageCID: Text): async () {
@@ -51,5 +52,6 @@ actor ChainLearn{
   // Query to get all issued NFTs
   public query func getAllNFTs(): async [NFT.BadgeNFT] {
     return nftCollection;
+
   };
 }

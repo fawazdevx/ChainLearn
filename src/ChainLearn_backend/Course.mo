@@ -7,6 +7,7 @@ module {
     questionText: Text;
     options: [Text];
     correctOptionIndex: Nat;
+    
   };
 
   public type Courses = { // Defining the Courses type

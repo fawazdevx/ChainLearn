@@ -9,6 +9,7 @@ module NFT {
     courseName: Text;
     achievement: Text; // Can specify rarity
     imageCID: Text; // Store the CID for the image
+    
   };
 
   // Define a structure for course-to-CID mapping

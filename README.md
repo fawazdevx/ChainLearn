@@ -80,7 +80,7 @@ For inquiries, please reach out to:
 
 **Fawaz Oyebode Akanni**  
 Email: [oyebodefawaz2020@gmail.com](mailto:oyebodefawaz2020@gmail.com)  
-Twitter: [@fawazdevx_](https://twitter.com/fawazdevx_)
+Twitter: [@fawazdevx_](https://twitter.com/fawaz_devx)
 
 Let's bridge the gap between Web2 and Web3 together!
 
