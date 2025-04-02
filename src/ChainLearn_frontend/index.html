@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="Content-Security-Policy" content="
+  default-src 'self' http://localhost:4943 https://icp0.io;
+  script-src 'self' 'unsafe-inline' 'unsafe-eval';
+  connect-src 'self' http://localhost:4943 https://icp0.io;
+  img-src 'self' data: https://ipfs.io https://cloudflare-ipfs.com;
+  style-src 'self' 'unsafe-inline';
+">
+
+
+  <title>ChainLearn | The Future of Decentralized Learning</title>
+  <base href="/" />
+  <link rel="icon" href="/favicon.ico" />
+</head>
+
+<body>
+  <div class="browser-warning">
+    ⚠️ If this page appears broken, try reloading. If the problem persists, try switching browsers; Chrome or
+    Firefox are recommended.
+  </div>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+/* ---------------- Global Base Styles ---------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Orbitron", sans-serif;
+  background-color: #0d0d0f;
+  color: #0ff;
+  text-align: center;
+}
+
+/* ---------------- App Container ---------------- */
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* ---------------- Home Page Styles ---------------- */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0d0d0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,255,255,0.2), transparent 70%);
+  z-index: -1;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.5);
+  z-index: 1;
+}
+
+.theme-toggle-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* ---------------- Sidebar Styles ---------------- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background-color: #111;
+  color: #0ff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  color: #0ff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sidebar a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ---------------- Dashboard & Course Page Global Styles ---------------- */
+.dashboard-container,
+.courses-page-container,
+.course-detail-container {
+  padding: 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0d0d0f 30%, #1a1a1a 100%);
+  color: #0ff;
+}
+
+.dashboard-main-content {
+  margin-left: 220px;
+  padding: 20px;
+}
+
+.dashboard-cards,
+.courses-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ---------------- Buttons ---------------- */
+button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 15px #ff00ff, 0 0 25px #0ff;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #0ff;
+}
+
+/* ---------------- Copy & Complete Button ---------------- */
+.copy-button, .complete-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.complete-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.complete-button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* ---------------- Loading Indicator ---------------- */
+.loading-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(to right, #ff9800, #ff5722);
+  animation: loadingAnimation 1.5s linear infinite;
+  z-index: 100;
+}
+
+@keyframes loadingAnimation {
+  0% { width: 0%; }
+  50% { width: 50%; }
+  100% { width: 100%; }
+}
+
+/* ---------------- Course Progress Bar ---------------- */
+.progress-container {
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.progress-bar {
+  height: 10px;
+  width: 100%;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(45deg, #ff00ff, #00ffff);
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Additional styles as needed... */
