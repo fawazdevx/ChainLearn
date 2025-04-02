@@ -1,6 +1,6 @@
 # ChainLearn
 
-![ChainLearn Logo](assets/ch.png)
+![ChainLearn Logo](src/ChainLearn_frontend/src/assets/ch.png)
 
 ChainLearn is a decentralized learning platform designed to empower developers and learners with seamless access to Web3 knowledge. Our platform bridges the gap between Web2 and Web3, offering interactive courses, quizzes, and rewards through blockchain technology. By integrating NFTs and cryptocurrency-based rewards, ChainLearn incentivizes learners to achieve milestones and build expertise in blockchain, cybersecurity, software, and game development. Our decentralized system ensures transparency, security, and ownership for all participants, making it the go-to platform for Web3 education.
 
